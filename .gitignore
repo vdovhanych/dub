@@ -1,15 +1,11 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
+node_modules
+dist/
 
 # next.js
-/.next/
+.next/
 /out/
 
 # production
@@ -20,9 +16,6 @@
 *.pem
 
 # debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
 .pnpm-debug.log*
 
 # local env files
@@ -33,8 +26,11 @@ yarn-error.log*
 .vercel
 
 # tinybird
-venv
+.venv
 .tinyb
+
+# turbo
+.turbo
 
 # typescript
 *.tsbuildinfo
@@ -42,6 +38,11 @@ next-env.d.ts
 
 # miscellaneous
 /pages/api/scripts*
+apps/docs/openapi.json
+packages/stripe-app/.build/*
 .react-email
 .contentlayer
 .vscode
+*.csv
+*.ndjson
+.vitest
